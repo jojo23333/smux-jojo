@@ -6,7 +6,7 @@ pane="${TMUX_PANE:-}"
 if [ -z "$pane" ]; then exit 0; fi
 
 if [ "$action" = "set" ]; then
-  tmux set-option -p -t "$pane" window-style 'bg=colour52'
+  tmux set-option -p -t "$pane" window-style 'bg=colour53'
 elif [ "$action" = "reset" ]; then
   tmux set-option -p -t "$pane" window-style 'bg=default'
 fi

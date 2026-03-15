@@ -1,17 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "mcp__browser-use__*"
+      "mcp__browser-use__*",
+      "Bash(tmux-bridge *)",
+      "Bash(curl*browse-production-cf34.up.railway.app*)"
     ]
-  },
-  "enabledPlugins": {
-    "browser-use@browser-use-local": true,
-    "rust-analyzer-lsp@claude-plugins-official": true,
-    "pyright-lsp@claude-plugins-official": true
-  },
-  "skipDangerousModePermissionPrompt": true,
-  "feedbackSurveyState": {
-    "lastShownTime": 1753939327624
   },
   "hooks": {
     "PermissionRequest": [
@@ -45,6 +38,15 @@
       }
     ]
   },
+  "enabledPlugins": {
+    "browser-use@browser-use-local": true,
+    "rust-analyzer-lsp@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "feedbackSurveyState": {
+    "lastShownTime": 1753939327624
+  },
   "mcpServers": {
     "adobe-premiere-pro": {
       "command": "node",
@@ -64,5 +66,6 @@
         "--mcp"
       ]
     }
-  }
+  },
+  "effortLevel": "high"
 }
