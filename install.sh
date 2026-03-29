@@ -143,9 +143,9 @@ cmd_install() {
 
   # 2. Install clipboard tool on Linux if missing
   if [[ "$os" == "linux" ]]; then
-    if ! command -v xclip >/dev/null 2>&1 && ! command -v xsel >/dev/null 2>&1; then
-      info "No clipboard tool found. Installing xclip..."
-      pkg_install xclip
+    if ! command -v xsel >/dev/null 2>&1; then
+      info "xsel not found. Installing xsel..."
+      pkg_install xsel
     fi
   fi
 
